@@ -1,0 +1,54 @@
+h1{
+    color: chocolate;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+p{
+    color: brown;
+    font-size: 20px;
+    padding: 2px;
+}
+
+
+header{
+    background-color: beige;
+}
+
+
+nav{
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav a{
+    margin: 10px;
+}
+
+
+section{
+    width: 100%;
+    text-align: center;
+}
+
+
+article{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+aside{
+    background-color: antiquewhite;
+    padding: 2px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+}
