@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h2>Calculadora Web</h2>
+        <button id="btnHistorial">Historial de Cálculos</button>
+    </header>
+
+    <main>
+
+        <aside id="historial" class="oculto">
+
+            <div class="tituloHistorial">
+                <h3>Historial de Cálculos</h3>
+                <button id="cerrarHistorial">✖</button>
+            </div>
+
+            <div id="listaHistorial">
+
+            </div>
+
+        </aside>
+
+        <section class="calculadora">
+
+            <div class="pantalla">
+
+                <input type="text" id="operacion" placeholder="0" readonly>
+                <input type="text" id="resultado" placeholder="0" readonly>
+
+            </div>
+
+            <div class="botones">
+                <button class="borrar" onclick="borrarUno()">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+
+                <button onclick="agregar('(')">(</button>
+                <button onclick="agregar(')')">)</button>
+                <button class="naranja" onclick="limpiarTodo()">AC</button>
+                <button onclick="agregar('7')">7</button>
+                <button onclick="agregar('8')">8</button>
+                <button onclick="agregar('9')">9</button>
+                <button onclick="agregar('/')">/</button>
+                <button onclick="agregar('4')">4</button>
+                <button onclick="agregar('5')">5</button>
+                <button onclick="agregar('6')">6</button>
+                <button onclick="agregar('+')">+</button>
+                <button onclick="agregar('1')">1</button>
+                <button onclick="agregar('2')">2</button>
+                <button onclick="agregar('3')">3</button>
+                <button onclick="agregar('-')">-</button>
+                <button onclick="agregar('0')">0</button>
+                <button onclick="agregar('.')">.</button>
+                <button class="naranja" onclick="calcular()">=</button>
+                <button onclick="agregar('*')">×</button>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
