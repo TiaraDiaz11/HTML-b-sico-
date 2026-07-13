@@ -101,9 +101,12 @@ main{
 }
 
 .pantalla input{
+<<<<<<< HEAD
     flex: 1;
     width: 0;
     min-width: 0;
+=======
+>>>>>>> 50b6b95e81f0fe33d23beeb28b40114523990831
     height: 80px;
     border: 1px solid #999;
     background: #dedede;
@@ -163,8 +166,13 @@ main{
 .borrar:hover{
     background:#222 !important;
 }
+<<<<<<< HEAD
 /*media query como para tablets*/
 @media(min-width: 768px) and (max-width: 1024px){
+=======
+
+@media(max-width:850px){
+>>>>>>> 50b6b95e81f0fe33d23beeb28b40114523990831
     main{
         flex-direction:column;
     }
